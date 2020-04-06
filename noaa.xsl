@@ -3,7 +3,8 @@
 <xsl:output method="xml" omit-xml-declaration="yes" encoding="utf-8"/>
 <xsl:variable name="timelayoutkey" select="/dwml/data/parameters/weather/@time-layout" />
 <xsl:template match="/">
-<h2>Current Conditions for <a href="{dwml/data[@type='current observations']/moreWeatherInformation}"><xsl:value-of select="dwml/data/location/area-description" /></a></h2>
+<h2>Current Conditions for <a href="{dwml/data/moreWeatherInformation}"><xsl:value-of select="dwml/data/location/area-description" /></a></h2>
+<p><a href="zip2geo.php">Change location</a></p>
 <p>
 <div style="float:left;">
 <img src="{dwml/data[@type='current observations']/parameters/conditions-icon/icon-link}" />

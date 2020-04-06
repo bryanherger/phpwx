@@ -19,7 +19,13 @@ $xslProc = new XSLTProcessor();
 $xslProc->importStylesheet($xsl);
 $xmldoc = new DOMDocument();
 // edit this to match your location
+if (isset($_REQUEST["lat"]) && isset($_REQUEST["lon"])) {
+$lat = $_REQUEST["lat"];
+$lon = $_REQUEST["lon"];
+$xmldoc->load('https://forecast.weather.gov/MapClick.php?lat='.$lat.'&lon='.$lon.'&unit=0&lg=english&FcstType=dwml');
+} else {
 $xmldoc->load('https://forecast.weather.gov/MapClick.php?lat=40.71&lon=-73.54&unit=0&lg=english&FcstType=dwml');
+}
 echo $xslProc->transformToXML($xmldoc);
 ?>
 </body>
