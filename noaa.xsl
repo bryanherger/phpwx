@@ -51,16 +51,3 @@ Direction: <xsl:value-of select="dwml/data[@type='current observations']/paramet
 <a href="{hazardTextURL}"><em><xsl:value-of select="@headline"/></em></a><xsl:text>. </xsl:text>
 </xsl:template>
 </xsl:stylesheet>
-
-<!--
-<data type="current observations">
-        <location>
-                <location-key>point1</location-key>
-                <point latitude="40.73" longitude="-73.42"/>
-                <area-description>Farmingdale - Republic Airport, NY</area-description>
-                <height datum="mean sea level" height-units="feet">72</height>
-        </location>
-        <moreWeatherInformation applicable-location="point1">http://www.nws.noaa.gov/data/obhistory/KFRG.html</moreWeatherInformation>  <time-layout time-coordinate="local">   <layout-key>k-p1h-n1-1</layout-key>     <start-valid-time period-name="current">2020-04-05T06:53:00-04:00</start-valid-time>    </time-layout>  <parameters applicable-location="point1">       <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">       <value>47</value>       </temperature>  <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">      <value>43</value>       </temperature>  <humidity type="relative" time-layout="k-p1h-n1-1">     <value>86</value>       </humidity>     <weather time-layout="k-p1h-n1-1">      <name>Weather Type, Coverage, Intensity</name>  <weather-conditions weather-summary="Overcast"/>
-        <weather-conditions>    <value> <visibility units="statute miles">10.00</visibility>    </value>        </weather-conditions>   </weather>      <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">  <name>Conditions Icon</name>    <icon-link>http://forecast.weather.gov/newimages/medium/ovc.png</icon-link>     </conditions-icon>      <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
-   <value>170</value>      </direction>    <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1"> <value>NA</value>       </wind-speed>   <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">    <value>6</value>        </wind-speed>           <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">                  <value>30.04</value>            </pressure>     </parameters></data></dwml>
--->

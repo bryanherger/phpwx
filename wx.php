@@ -28,6 +28,16 @@ $xmldoc->load('https://forecast.weather.gov/MapClick.php?lat=40.71&lon=-73.54&un
 }
 echo $xslProc->transformToXML($xmldoc);
 ?>
+<hr>
+<?php
+$xsl = new DOMDocument();
+$xsl->load('noaa_hourly.xsl');
+$xslProc = new XSLTProcessor();
+$xslProc->importStylesheet($xsl);
+$xmldoc = new DOMDocument();
+$xmldoc->load('https://forecast.weather.gov/MapClick.php?lat=40.71&lon=-73.54&unit=0&lg=english&FcstType=digitalDWML'); // ?lat=40.71&lon=-73.54&FcstType=digitalDWML
+echo $xslProc->transformToXML($xmldoc);
+?>
 </body>
 </html>
 

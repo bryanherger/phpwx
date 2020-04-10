@@ -4,4 +4,15 @@ body {
   font-family: "Lucida Console", Courier, monospace;
 }
 
-img.wxicon { width:32;height;32; }
+img.wxicon { width:32;height:32; }
+
+span.time { display:inline-block;width:275; }
+span.tempM { display:inline-block;width:65;color:#FF0000; }
+span.tempW { display:inline-block;width:65;color:#009900; }
+span.tempD { display:inline-block;width:65;color:#0000CC; }
+span.hum { display:inline-block;width:65;color:#006600; }
+span.windS { display:inline-block;width:65;color:#990099; }
+span.windG { display:inline-block;width:65;color:#000066; }
+span.windD { display:inline-block;width:65;color:#666666; }
+span.POP { display:inline-block;width:65;color:#996633; }
+span.clouds { display:inline-block;width:65;color:#0000CC; }
