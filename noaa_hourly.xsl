@@ -37,8 +37,8 @@
 <span class="tempW"><xsl:value-of select="dwml/data/parameters/temperature[@type='wind chill']/value[$first]" />F </span>
 <span class="tempD"><xsl:value-of select="dwml/data/parameters/temperature[@type='dew point']/value[$first]" />F </span>
 <span class="hum"><xsl:value-of select="dwml/data/parameters/humidity/value[$first]" />pct </span>
-<span class="windS"><xsl:value-of select="dwml/data/parameters/wind-speed[@type='sustained']/value[$first]" />kt </span>
-<span class="windG"><xsl:value-of select="dwml/data/parameters/wind-speed[@type='gust']/value[$first]" />kt </span>
+<span class="windS"><xsl:value-of select="dwml/data/parameters/wind-speed[@type='sustained']/value[$first]" />mph </span>
+<span class="windG"><xsl:value-of select="dwml/data/parameters/wind-speed[@type='gust']/value[$first]" />mph </span>
 <span class="windD"><xsl:value-of select="dwml/data/parameters/direction[@type='wind']/value[$first]" />deg </span>
 <span class="POP"><xsl:value-of select="dwml/data/parameters/probability-of-precipitation/value[$first]" />pct </span>
 <span class="clouds"><xsl:value-of select="dwml/data/parameters/cloud-amount/value[$first]" />pct</span>

@@ -6,6 +6,8 @@ body {
 
 img.wxicon { width:32;height:32; }
 
+p.astronomy { float:right; }
+
 span.time { display:inline-block;width:275; }
 span.tempM { display:inline-block;width:65;color:#FF0000; }
 span.tempW { display:inline-block;width:65;color:#009900; }
